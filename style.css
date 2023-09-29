@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient( to right ,
+        yellow 30%,
+        red
+    ) no-repeat center center/cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.digital-clock h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.digital-clock span{
+    font-size: 5rem;
+}
+
+@media screen and ( max-width:800px) {
+    .digital-clock h1{
+        font-size: 3rem;
+    }
+}
+@media screen and ( max-width:470px) {
+    .digital-clock h1{
+        font-size: 2rem;
+    }
+}
+@media screen and ( max-width:330px) {
+    .digital-clock h1{
+        font-size: 1.5rem;
+    }
+}
